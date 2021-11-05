@@ -39,12 +39,7 @@ public class State {
   private String uf;
 
   private Integer ibge;
-
-  /* 1st forma de localizar o país
-  @Column(name = "pais")
-  private Integer countryId;*/
-
-  // 2nd - @ManyToOne
+  
   @ManyToOne
   @JoinColumn(name = "pais", referencedColumnName = "id")
   private Country country;
@@ -61,8 +56,4 @@ public class State {
 	  return country;
   }
   
-  /* Método relacionado à primeira forma de localizar o país
-     public Integer getCountryId() {
-	  return countryId;
-  }*/
 }
