@@ -1,5 +1,7 @@
 package com.globalweb.citiesapi.states;
 
-public interface StateRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface StateRepository extends JpaRepository<State, Long>{
 
 }

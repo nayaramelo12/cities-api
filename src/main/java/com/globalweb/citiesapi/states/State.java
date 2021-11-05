@@ -40,7 +40,7 @@ public class State {
 
   private Integer ibge;
 
-  /* 1st
+  /* 1st forma de localizar o país
   @Column(name = "pais")
   private Integer countryId;*/
 
@@ -56,4 +56,13 @@ public class State {
 
   public State() {
   }
+  
+  public Country getCountry() {
+	  return country;
+  }
+  
+  /* Método relacionado à primeira forma de localizar o país
+     public Integer getCountryId() {
+	  return countryId;
+  }*/
 }
